@@ -25,6 +25,12 @@ a {
     color: inherit;
 }
 
+.item{
+    width: 5em;
+    display: inline-block;
+    position: relative;
+   }
+
 /* HEADER */
 header {
     width: 100%;
@@ -37,7 +43,7 @@ header {
 }
 
 .view {
-    background-color: #4a4a4a;
+    background-color: #000000;
     color: white;
     padding: .3em .5em;
     border-radius: 5px;
@@ -87,9 +93,87 @@ main {
     color: white;
     padding: 0.2rem;
 }
-
+/* FOOTER */
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 95%;
+    margin: auto;
     background-color: #222222;
-    width: 100%;
-    height: 100px;
 }
+
+/* common footer*/
+
+
+
+.icon {
+    display: flex;
+    width: 65px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    color: white;
+}
+
+.icon i {
+    font-size: 1.7em;
+}
+
+.icon p {
+    width: 130px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+}
+
+/*  input-video-audio */
+.input-video-audio {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.angle {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 1em;
+
+}
+
+/* button zoom */
+.button-zoom {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.green {
+    color: #4bc800;
+}
+
+/* end meeting */
+.close-meeting {
+    display: flex;
+    width: 7%;
+    height: 100%;
+    justify-content: flex-end;
+    background-color: #4a4a4a;
+}
+
+.end-m {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    color: red;
+}
+
+
