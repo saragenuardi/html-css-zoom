@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* COMMON */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 html {
     font-family: 'Open Sans', sans-serif;
@@ -14,21 +20,46 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
 header {
     width: 100%;
     height: 80px;
 }
 
+.container-nav {
+    float: right;
+    margin-top: 0.5em;
+}
 
-
+.view {
+    background-color: #4a4a4a;
+    color: white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    float: left;
+}
+.fullscreen {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: .3em .5em;
+    border-radius: 5px;
+    margin-left: .5em;
+    float: right;
+}
 /* MAIN */
 main {
     width: 100%;
     height: calc(100vh - 180px);
-    overflow-y: auto;
+    overflow: auto;
 }
 
-.container {
+.container-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
