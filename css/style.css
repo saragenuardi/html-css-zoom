@@ -32,6 +32,7 @@ main {
     height: 150px;
     background-color: beige;
     border: 1px solid black;
+    background-image: url(https://picsum.photos/246/146);
 }
 
 footer {
