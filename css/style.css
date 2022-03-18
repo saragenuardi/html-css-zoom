@@ -130,6 +130,11 @@ footer {
     justify-content: center;
 }
 
+.text {
+    margin-top: 0.5em;
+    font-size: 0.5em;
+} 
+
 /*  input-video-audio */
 .input-video-audio {
     display: flex;
